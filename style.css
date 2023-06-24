@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf);
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        text-align: justify;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background-color: #89CDA5;
+    padding: 1px;
+}
+
+/* STYLE TITLES AND PARAGRAPHS */
+p > a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;  
+    color: #1A5A37;
+    font-weight: bolder;
+}
+
+strong {
+    color: #1A5A37;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 2px;
+}
+
+a:hover {
+    background-color: #1A5A37;
+    color: white;
+    padding: 2px;
+}
+
+a::after {
+    content: var("\00a0\1F517");
+}
+
+p, h3 {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* STYLE HEADER AND NAV */
+header {
+    height: 110px;
+    font-family: Arial, Verdana, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #5ABA7A, #1a5735);
+    color: white;
+    padding: 10px;
+}
+
+header > h1 {
+    font-family: 'Bebas Neue', Arial, Verdana, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+}
+
+header > p {
+    text-align: center;
+    margin: 0;
+    padding: 20px 0px 0px;
+}
+
+nav {
+    background-color: #1A5A37;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.400);
+}
+
+nav > a {
+    color: white;
+    padding: 10px 20px 10px 10px;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    border-radius: 5px;
+    padding: 10px 20px 10px 10px;
+    background-color: #5CBE7D;
+    transition-duration: 0.9s;
+}
+
+/* STYLE CONTENT */
+main {
+    min-width: 320px;
+    max-width: 1000px;
+    margin: 0px auto 10px auto;
+    background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+article {
+    padding: 20px 20px 10px;
+}
+
+article > h2 {
+    background-image: linear-gradient(to right, #89CDA5, white);
+    border-radius: 10px 0px 0px 10px;
+    padding: 2px;
+    padding-left: 10px;
+    margin: 20px;
+    margin-left: 0px;
+    font-family: idroid;
+    color: #1A5A37;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+}
+
+article > h1 {
+    padding: 20px;
+    margin: 0;
+    font-family: idroid;
+    font-size: 2em;
+    color: #1A5A37;
+    text-align: center;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.400);
+}
+
+article > p {
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 2em;
+    padding: 0px 0px 20px;
+}
+
+div.video {
+    background-color: #1A5A37;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 56.88%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+#bugdroid {
+    display: block;
+    min-width: none;
+    max-width: 350px;
+    margin: auto;
+  }
+
+img {
+    display: block;
+    margin: auto;
+    padding: 0px;
+    width: 100%;
+  }
+
+/* StYLE ASIDE */
+aside {
+    background-color: #C5EBD6;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.400);
+}
+
+aside > h3 {
+    border-radius: 5px 5px 0px 0px;
+    background-color: #2FA866;
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    margin: -10px -10px 20px -10px;
+}
+
+aside > p {
+    text-align: justify;
+    text-indent: 1em;
+    line-height: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside > ul {
+    list-style-type: '\2714\00a0\00a0';
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    list-style-position: inside;
+    columns: 2;
+}
+
+/* STYLE FOOTER */
+footer {
+    text-align: center;
+    background-color: #1A5A37;
+    color: white;
+    margin: 0;
+    padding: 5px;
+}
